@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="PointerStateHelper.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PointerStateHelper"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:helper="using:PointerStateHelper.Helpers"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button HorizontalAlignment="Center" VerticalAlignment="Center"
+                    helper:PointerOverHelper.Background="Red" helper:PointerOverHelper.Foreground="Blue" helper:PointerOverHelper.BorderBrush="Transparent"
+                    helper:PressedHelper.Background="Green" helper:PressedHelper.Foreground="Gray" helper:PressedHelper.BorderBrush="Transparent"
+                    Content="哈哈哈" Padding="20,10" />
+            <TextBox helper:PointerOverHelper.Background="Red" helper:PointerOverHelper.Foreground="Blue" helper:PointerOverHelper.BorderBrush="Transparent"
+                     helper:PressedHelper.Background="Green" helper:PressedHelper.Foreground="Gray" helper:PressedHelper.BorderBrush="Transparent"
+                     Text="哈哈哈" Padding="20,10" />
+        </StackPanel>
+    </Grid>
+</Page>
